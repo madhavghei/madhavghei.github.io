@@ -2,13 +2,141 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title> Madhav Ghei </title>
+	<title> The Musical Facemask </title>
 
 </head>
 
 
 
 <body>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<div class="container"> 
+<h1 class="display-4"> The Musical Facemask </h1>
+<hr class="my-4">
+
+<h6> Madhav Ghei • madhavghei2018@u.northwestern.edu • EECS 397: Digital Luthier • Northwestern University • Prof. Bryan Pardo </h6>
+
+
+
+<div class="accordion" id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Using the instrument
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <strong>Who is the expected user? </strong> The ideal user is a stage performer, ideally someone incorporating the mask as a part of a greater overall piece, such as interpretive dance, or a one-man band (using their hands for percussion instruments, for example, and using their face for the melody). Dancers also frequently use their facial expressions to add to their performance. Now, with the mask being able to map those facial expressions into musical output, they will no longer be just visual additions to the performance, but aural ones as well. <br> <br>
+
+		<strong> Expected use case:</strong> Stage performance. It will complement an existing dance / instrumental performance by transmitting facial expressions into music. <br> <br>
+
+		<strong> How is the instrument played? What kinds of sounds are produced? </strong> The instrument is played by biting down and chewing on a force sensor, which controls the volume of the generated sound. The pitch of the sound is controlled by moving one's chin along a soft potentiometer attached to the inside of the mask, directly under the chin. The sound produced is a sine wave, and depending on the amount of pressure applied to the force sensor (with one's bite) the sine wave undergoes a proportionate amount of distortion. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          Building the instrument
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <strong> How is it built? What software and hardware are used? </strong> I built this instrument using a Max MSP patch to interpret the sensor readings and link them to their corresponding sound parameter controls (i.e., the force sensor mapped to volume and the soft potentiometer to pitch). In terms of hardware, apart from the two sensors I used, I connected them to the software using an Arduino Uno and a breadboard. I attached the sensors to a Mexican Luchador mask I bought on Amazon for approximately $20. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          Lessons Learned
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <strong> What lessons did I learn from making this instrument? What might I improve on in future iterations? </strong> I learned that building a new instrument requires a lot of creativity. I had to think a lot about existing instruments and what affordances they gave musicians, and what they made hard. Because I was making an instrument that had a physical component, I also had to think about the human body and the ways in which existing instruments have been able to take advantage of the physical design of the body, as well as which paths remained relatively unexplored. I learned that despite your testing and planning, playing the instrument might taken on a completely different form once completed, and that's okay. For future iterations of this instrument, I would like to map additional mouth-based movements to musical parameters, such that the instrument can be played in deeper and more musicall complex ways. I would ideally like it to be completely hands-free, and thus able to augment other musical or dance-based actions, and it would probably be most effective in that regard if it were to be wireless, or completely self-powered — that is, without an Arduino. 
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          Pictures and Figures
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+         <div class="container">
+		  <div class="row">
+		    <div class="col-sm">
+		      <figure class="figure">
+		      	<img src="https://i.imgur.com/W11a6Fx.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+		  		<figcaption class="figure-caption">Side profile view of the instrument. Note the force sensor in mouth and wires connecting the soft potentiometer coming out by the ear. </figcaption>
+		  	  </figure>
+		    </div>
+		    <div class="col-sm">
+		      <figure class="figure">
+		      	<img src="https://imgur.com/H5qZrV8.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+		  		<figcaption class="figure-caption">During performance, the force sensor is kept in a plastic bag to keep saliva from interfering with the electric signals being sent to the Arduino.</figcaption>
+		  	  </figure>
+		    </div>
+		    <div class="col-sm">
+		      <figure class="figure">
+		      	<img src="https://imgur.com/pSz8Ifs.jpg" class="figure-img img-fluid"  alt="A generic square placeholder image with rounded corners in a figure.">
+		  		<figcaption class="figure-caption">A view of the soft-potentiometer from inside the mask. The musician's chin slides horizontally along this strip to change the pitch outputted by the instrument. </figcaption>
+		  	  </figure>
+		    </div>
+		    <div class="col-sm">
+		      <figure class="figure">
+		      	<img src="https://imgur.com/6p7SiCF.jpg" class="figure-img img-fluid"  alt="A generic square placeholder image with rounded corners in a figure.">
+		  		<figcaption class="figure-caption">A head-on view of the instrument.</figcaption>
+		  	  </figure>
+		    </div>
+		  </div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+         Video Demo
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+           <iframe width="853" height="480" src="https://www.youtube.com/embed/xO-4-ESGInQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
 
 </body>
 </html>

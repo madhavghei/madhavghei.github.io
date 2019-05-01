@@ -388,7 +388,7 @@ a:hover, a:focus, a:active {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #282828;
+  background: #282828 !important;
   background-repeat: repeat
 }
 
@@ -426,7 +426,6 @@ body {
 .navbar {
     font-size: 20pt;
     text:20pt;
-    background-color
 }
 
 .nav-link:hover {
